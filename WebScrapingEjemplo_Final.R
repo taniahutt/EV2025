@@ -4,6 +4,7 @@ if (!require(stringr)) install.packages("stringr")
 if (!require(dplyr)) install.packages("dplyr")
 if (!require(tidyr)) install.packages("tidyr")
 if (!require(readr)) install.packages("readr")
+if (!require(readr)) install.packages("tidyverse")
 
 # Cargar las librerías necesarias
 library(rvest)    # Para web scraping
@@ -85,6 +86,7 @@ conciertos_limpios <- tibble(
 # -------------------------------------------------------------------------
 write_csv(conciertos_limpios, "conciertos_2025_con_links.csv")
 cat("¡Datos guardados en 'conciertos_2025_con_links.csv'!")
+
 
 
 ### PARTE 2: Analisis
